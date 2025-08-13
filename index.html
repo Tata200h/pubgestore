@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-ar="تسجيل الدخول - استور ببجى" data-en="Login - PUBG STORE ">تسجيل الدخول - استور ببجى </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+            <!--header--->
+        <header class="header">
+            <div class="controls">
+                <button class="control-btn" id="languageToggle" title="تغيير اللغة">
+                    <i class="fas fa-language"></i>
+                    <span data-ar="EN" data-en="عر">EN</span>
+                </button>
+                <button class="control-btn" id="themeToggle" title="تغيير الوضع">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </header>
+            <!--main-content-->
+        <main class="main-content">
+            <div class="logo-section">
+                <div class="logo">
+                    <div class="cube">
+                        <img src="logo.png" alt="">
+                    </div>
+                </div>
+                <h1 class="title" data-ar="استور ببجى" data-en="PUBG STORE">استور ببجى</h1>
+                <p class="subtitle" data-ar="لشراء شدات بسعر مناسب و مضمون100 %" data-en="To Buy Wrenches at a reasonable price and 100% guaranteed">لشراء شدات بسعر مناسب و مضمون100 %</p>
+            </div>
+            <div class="login-container">
+                <div class="login-card">
+                    <h2 class="login-title" data-ar="تسجيل الدخول" data-en="Login">تسجيل الدخول</h2>
+                    <form class="login-form" id="loginForm">
+                        <div class="input-group">
+                            <label for="username" data-ar="اسم المستخدم" data-en="Username">اسم المستخدم</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-user input-icon"></i>
+                                <input type="text" id="username" name="username" required 
+                                        data-ar-placeholder="أدخل اسم المستخدم" 
+                                        data-en-placeholder="Enter username"
+                                        placeholder="أدخل اسم المستخدم">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="password" data-ar="كلمة المرور" data-en="Password">كلمة المرور</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-lock input-icon"></i>
+                                <input type="password" id="password" name="password" required 
+                                        data-ar-placeholder="أدخل كلمة المرور" 
+                                        data-en-placeholder="Enter password"
+                                        placeholder="أدخل كلمة المرور">
+                                <button type="button" class="toggle-password" id="togglePassword">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <button type="submit" class="login-btn">
+                            <span data-ar="تسجيل الدخول" data-en="Login">تسجيل الدخول</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <p id="message"></p>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p data-ar="© 2024 أكاديمية الروبيك. جميع الحقوق محفوظة." data-en="© 2024 Rubik Academy. All rights reserved.">© 2024 أكاديمية الروبيك. جميع الحقوق محفوظة.</p>
+        </footer>
+    </div>
+    <div class="message-container" id="messageContainer"></div>
+    <script src="login.js"></script>
+</body>
+</html>

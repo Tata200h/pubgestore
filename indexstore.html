@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUBG Store</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">
+                <img src="logo.png" alt="">
+                <span data-ar=" استور ببجى" data-en="PUBG Store">استور ببجى</span>
+            </h1>
+            <nav class="nav">
+                <div class="nav-links">
+                    <a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                    <a href="#products" data-ar="المشتريات" data-en="purchases">المشتريات</a>
+                    <a href="#contact" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a>
+                </div>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+            <div class="controls">
+                <button class="control-btn" id="themeToggle" title="تبديل الوضع الليلي">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="control-btn" id="languageToggle" title="تغيير اللغة">
+                    <i class="fas fa-language"></i>
+                    <span class="lang-text">EN</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 data-ar="مرحباً بك في استور ببجى" data-en="Welcome to Our Store BUBG">مرحباً بك في استور ببجى</h2>
+                <p data-ar="نحن نقدم لك أفضل الأسعار و سرعه الرد و ضمان  ١٠٠٪." data-en="We offer you the best prices, fast response and 100% guarantee.">نحن نقدم لك أفضل الأسعار و سرعه الرد و ضمان ١٠٠ ٪.</p>
+                <a href="#products" class="btn btn-primary" data-ar="ID للشراء شدادت" data-en="To buy UC ID">ID للشراء شدادت</a>
+                <a href="#products2" class="btn btn-primary" data-ar="email & QR للشراء شدادت" data-en="To buy UC">email & QR للشراء شدادت</a>
+            </div>
+        </div>
+    </section>
+    <!-- Products Section -1 US ID-->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title" data-ar="الشدات عن طريق ID" data-en="US ID">الشدات عن طريق Id</h2>
+            <div class="products-grid">
+                        <!--------- 60 US---------->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="us-1.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-ar="60 US" data-en="60 US">60 US</h3>
+                        <del><div class="price">60💸 <span data-ar="جنيه" data-en="L.E">جنيه</span></div></del>
+                        <div class="price">55💸<span data-ar=" جنيه" data-en="L.E">جنيه</span></div>
+                        <button class="btn btn-whatsapp" onclick="orderProduct('60 US ID ', '55')">
+                            <i class="fab fa-whatsapp"></i>
+                            <span data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</span>
+                        </button>
+                    </div>
+                </div>
+                        <!--------- 325 US---------->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="us-1.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-ar="325 US" data-en="325 US">325 US</h3>
+                        <del><div class="price">260💸 <span data-ar="جنيه" data-en="L.E">جنيه</span></div></del>
+                        <div class="price">245💸 <span data-ar=" جنيه" data-en="L.E">جنيه</span></div>
+                        <button class="btn btn-whatsapp" onclick="orderProduct('325 US ID', '245')">
+                            <i class="fab fa-whatsapp"></i>
+                            <span data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</span>
+                        </button>
+                    </div>
+                </div>
+                        <!--------- 660 US---------->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="us-1.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-ar="660 US" data-en="660 US">660 US</h3>
+                        <del><div class="price">480💸 <span data-ar="جنيه" data-en="L.E">جنيه</span></div></del>
+                        <div class="price">470💸 <span data-ar=" جنيه" data-en="L.E">جنيه</span></div>
+                        <button class="btn btn-whatsapp" onclick="orderProduct('660 US ID', '470')">
+                            <i class="fab fa-whatsapp"></i>
+                            <span data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</span>
+                        </button>
+                    </div>
+                </div>
+                        <!--------- 985 US---------->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="us-1.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-ar="985 US" data-en="985 US">985 US</h3>
+                        <del><div class="price">715💸 <span data-ar="جنيه" data-en="L.E">جنيه</span></div></del>
+                        <div class="price">700💸 <span data-ar=" جنيه" data-en="L.E">جنيه</span></div>
+                        <button class="btn btn-whatsapp" onclick="orderProduct('985 US ID', '700')">
+                            <i class="fab fa-whatsapp"></i>
+                            <span data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</span>
+                        </button>
+                    </div>
+                </div>
+                        <!--------- 1320 US---------->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="us-1.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-ar="1320 US" data-en="1320 US">1320 US</h3>
+                        <del><div class="price">920💸 <span data-ar="جنيه" data-en="L.E">جنيه</span></div></del>
+                        <div class="price">900💸 <span data-ar=" جنيه" data-en="L.E">جنيه</span></div>
+                        <button class="btn btn-whatsapp" onclick="orderProduct('1320 US ID', '900')">
+                            <i class="fab fa-whatsapp"></i>
+                            <span data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</span>
+                        </button>
+                    </div>
+                </div>
+                        <!--------- 1800 US---------->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="us-1.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-ar="1800 US" data-en="60 US">1800 US</h3>
+                        <del><div class="price">1250💸 <span data-ar="جنيه" data-en="L.E">جنيه</span></div></del>
+                        <div class="price">1200💸 <span data-ar=" جنيه" data-en="L.E">جنيه</span></div>
+                        <button class="btn btn-whatsapp" onclick="orderProduct('1800 US ID', '1200')">
+                            <i class="fab fa-whatsapp"></i>
+                            <span data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Products Section -2 US email & QR-->
+    <section id="products2" class="products ">
+        <div class="container">
+            <h2 class="section-title" data-ar="الشدات عن طريق email & QR" data-en="US email & QR">الشدات عن طريق email & QR</h2>
+            <div class="products-grid">
+                        <!--------- 60 US---------->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="us-1.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-ar="60 US" data-en="60 US">60 US</h3>
+                        <del><div class="price">75💸 <span data-ar="جنيه" data-en="L.E">جنيه</span></div></del>
+                        <div class="price">65💸 <span data-ar=" جنيه" data-en="L.E">جنيه</span></div>
+                        <button class="btn btn-whatsapp" onclick="orderProduct('60 US email & QR', '65')">
+                            <i class="fab fa-whatsapp"></i>
+                            <span data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</span>
+                        </button>
+                    </div>
+                </div>
+                        <!--------- 325 US---------->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="us-1.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-ar="325 US" data-en="325 US">325 US</h3>
+                        <del><div class="price">240💸 <span data-ar="جنيه" data-en="L.E">جنيه</span></div></del>
+                        <div class="price">225💸 <span data-ar=" جنيه" data-en="L.E">جنيه</span></div>
+                        <button class="btn btn-whatsapp" onclick="orderProduct('325 US email & QR', '225')">
+                            <i class="fab fa-whatsapp"></i>
+                            <span data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</span>
+                        </button>
+                    </div>
+                </div>
+                        <!--------- 660 US---------->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="us-1.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-ar="660 US" data-en="660 US">660 US</h3>
+                        <del><div class="price">455💸 <span data-ar="جنيه" data-en="L.E">جنيه</span></div></del>
+                        <div class="price">440💸 <span data-ar=" جنيه" data-en="L.E">جنيه</span></div>
+                        <button class="btn btn-whatsapp" onclick="orderProduct('660 US email & QR', '440')">
+                            <i class="fab fa-whatsapp"></i>
+                            <span data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</span>
+                        </button>
+                    </div>
+                </div>
+                        <!--------- 985 US---------->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="us-1.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-ar="985 US" data-en="985 US">985 US</h3>
+                        <del><div class="price">675💸 <span data-ar="جنيه" data-en="L.E">جنيه</span></div></del>
+                        <div class="price">660💸 <span data-ar=" جنيه" data-en="L.E">جنيه</span></div>
+                        <button class="btn btn-whatsapp" onclick="orderProduct('985 US email & QR', '660')">
+                            <i class="fab fa-whatsapp"></i>
+                            <span data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</span>
+                        </button>
+                    </div>
+                </div>
+                        <!--------- 1300 US---------->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="us-1.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-ar="1320 US" data-en="1300 US">1300 US</h3>
+                        <del><div class="price">890💸 <span data-ar="جنيه" data-en="L.E">جنيه</span></div></del>
+                        <div class="price">870💸 <span data-ar=" جنيه" data-en="L.E">جنيه</span></div>
+                        <button class="btn btn-whatsapp" onclick="orderProduct('1320 US email & QR', '870')">
+                            <i class="fab fa-whatsapp"></i>
+                            <span data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</span>
+                        </button>
+                    </div>
+                </div>
+                        <!--------- 1800 US---------->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="us-1.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-ar="1800 US" data-en="1800 US">1800 US</h3>
+                        <del><div class="price">1140💸 <span data-ar="جنيه" data-en="L.E">جنيه</span></div></del>
+                        <div class="price">1100💸 <span data-ar=" جنيه" data-en="L.E">جنيه</span></div>
+                        <button class="btn btn-whatsapp" onclick="orderProduct('1800 US email & QR', '1100')">
+                            <i class="fab fa-whatsapp"></i>
+                            <span data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+201156197588</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>pubgstoreus@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-ar="مصر , القاهره" data-en="Egypt, Cairo">مصر ,القاهره</span>
+                    </div>
+                </div>
+                <div class="whatsapp-contact">
+                    <h3 data-ar="تواصل معنا عبر واتساب" data-en="Contact us via WhatsApp">تواصل معنا عبر واتساب</h3>
+                    <button class="btn btn-whatsapp-large" onclick="contactWhatsApp()">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-ar="راسلنا على واتساب" data-en="Message us on WhatsApp">راسلنا على واتساب</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-ar="&copy; 2025 استور ببجى. جميع الحقوق محفوظة." data-en="&copy; 2025 PUBG Store. All rights reserved.">&copy; 2025 استور ببجى. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float" onclick="contactWhatsApp()">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+    <!-- Script JS -->
+    <script src="script.js"></script>
+</body>
+</html>
+
